@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="./project-Images/logo.png">
+
+    <title>Grade Checking</title>
+</head>
+
+<body>
+    <div class="main-components">
+        <nav>
+            <div class="nav-bar">
+                <div class="logo">
+                    <img src="./project-Images/logo.png" alt="">
+                </div>
+                <div class="nav-heading">
+                    <h1>Percentage and Grade Calculator</h1>
+                </div>
+                <div class="nav-button">
+                    <button><a href="">Sign in</a></button>
+                </div>
+            </div>
+        </nav>
+        <div class="pixel320">
+            <h2>percentage and Grade Calculator</h2>
+        </div>
+        <section>
+            <div class="components-card">
+                <div class="main-heading">
+                    <h1>What's Your Grade and Percentage ?</h1>
+                    <p>(Check Here)</p>
+                </div>
+
+                <div class="sub-heading">
+                    <h2>Percentage and Grade Calculator :</h2>
+                    <p>An online marks percentage calculator to measure the percentage of marks obtained in the
+                        examination. Enter the marks you have scored and also provide the total marks to find the exam
+                        mark percentage.</p>
+                </div>
+                <div class="form-style">
+                    <form onsubmit="checkGrade() ; return false">
+
+                        <div class="input-area">
+                            <label class="label" for="inpNum1"> what was your totak mark ? </label><br>
+                            <div class="input-field">
+                                <input type="text" id="inpNum1" placeholder="Enter your Total marks" required>
+                            </div>
+                            <br>
+                            <label class="label" for="inpNum2">what was your score ? </label><br>
+                            <div class="input-field">
+                                <input type="text" id="inpNum2" placeholder="Enter Your Obtain marks" required>
+                            </div>
+                            <br>
+                            <div>
+                                <button class="calculate-button">Calculate</button>
+                                <!-- <button class="reset-button">Reset All</button> -->
+                            </div>
+                        </div>
+                    </form>
+                    <p id="validation" class="validation"></p>
+                    <h1 id="result" class="result"></h1>
+                </div>
+                <div class="sub-heading">
+                    <h2>Percentage and Grade Calculator :</h2>
+                    <p>Percentage and Grade Calculator is useful for school and college students to keep track of their overall percentage scores. Percentage is a number expressed as a fraction of 100.</p>
+                </div>
+                <div class="sub-heading">
+                    <h2>How to Find Percentage of Marks Obtained :</h2>
+                    <p>To find percentage, divide the total scores with the marks obtained and then multiply the result with 100. A simple online marks percentage calculator tool for students of all age group to keep track of their percentage scores in the examination.
+                </div>
+
+                <div class="sub-heading">
+                    <h2>Formula to Find Percentage of Marks :</h2>
+                    <p>You can also use the formula mentioned below to calculate the percentage of your total mark scores.</p>
+                       <div class="formula-card">
+                        <h3>Percentage of Overall Scored Marks = (Obtain marks /Total marks)×100 
+                        </h3>
+                       </div>
+                </div>
+
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer">
+                <h3>Copyright &#169; 2023 M.Masood Huraira : All rights reserved.</h3>
+            </div>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

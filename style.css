@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("Roboto/Roboto-Regular.ttf");
+}
+
+
+.nav-bar {
+    height: 100px;
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(100 165 217), rgb(221 26 92));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+.nav-heading {
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+    font-family: sans-serif;
+}
+
+.nav-button button {
+    /* background-color: rgb(221 26 92); */
+    border: none;
+    outline: none;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 20px;
+    margin-right: 40px;
+    transition: 0.2s;
+    background-color: transparent;
+}
+
+.nav-button button:hover {
+    text-decoration: underline white;
+}
+
+.nav-button button a {
+    text-decoration: none;
+    color: white;
+}
+
+.components-card {
+    padding: 11px 0px 11px 20px;
+    border: 0px solid black;
+    width: 60%;
+    margin: 130px 0px 20px 50px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px grey;
+}
+
+.main-heading {
+    margin-bottom: 20px;
+    font-family: Roboto;
+    color: rgb(26, 25, 25);
+}
+
+.sub-heading {
+    margin-bottom: 20px;
+    font-family: Roboto;
+    color: rgb(26, 25, 25);
+}
+
+.form-style {
+    /* border: 2px solid black; */
+    width: 70%;
+    padding: 20px 0px 20px 20px;
+    font-family: Roboto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    box-shadow: 1px 1px 3px grey;
+    box-sizing: border-box;
+}
+
+.input-field input {
+    margin-top: 5px;
+    padding: 8px 200px 8px 5px;
+    border-radius: 5px;
+    border-color: rgb(0, 0, 0);
+    box-shadow: 1px 1px 2px grey;
+    font-family: Roboto
+}
+
+.input-field input:focus {
+    outline-color: rgb(216, 28, 138);
+}
+
+.calculate-button {
+    font-family: Roboto;
+    padding: 8px 70px;
+    font-weight: bolder;
+    font-size: 22px;
+    border-radius: 5px;
+    color: white;
+    background-color: tomato;
+    border: none;
+    transition: 0.2s;
+}
+
+.reset-button {
+    font-family: Roboto;
+    font-weight: bolder;
+    font-size: 22px;
+    padding: 8px 20px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: tomato;
+    transition: 0.2s;
+
+}
+
+.calculate-button:hover,
+.reset-button:hover {
+    background-color: rgb(255, 84, 54);
+    cursor: pointer;
+}
+
+.result {
+    margin-top: 10px;
+    font-family: Roboto;
+}
+
+.validation {
+    color: #ff0000;
+    font-family: Roboto;
+}
+
+.formula-card {
+    /* border:1px solid black */
+    width: 90%;
+    margin: 20px 0px;
+    padding: 20px 0px;
+    text-align: center;
+    background-color: cornflowerblue;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px grey;
+    color: blue;
+    font-family: Roboto;
+
+}
+
+.footer {
+    margin-top: 10px;
+    padding: 20px 0px;
+    text-align: center;
+    font-family: Roboto;
+    color: white;
+    background-color: black;
+    width: 100%;
+}
+
+
+
+@media screen and(max-width: 900px) {
+    .nav-heading {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .components-card {
+        width: 88%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .form-style {
+        width: 88%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .input-field input {
+        padding: 8px 100px 8px 5px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .nav-heading {
+        display: none;
+    }
+
+    .components-card {
+        padding: 11px 0px 11px 15px;
+        border: 0px solid black;
+        width: 90%;
+        margin: 130px 0px 20px 8px;
+        background-color: whitesmoke;
+        border-radius: 5px;
+        box-shadow: 1px 1px 3px grey;
+    }
+
+    .form-style {
+        /* border: 2px solid black; */
+        width: 90%;
+        padding: 20px 0px 20px 20px;
+        font-family: Roboto;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        background-color: antiquewhite;
+        box-shadow: 1px 1px 3px grey;
+        box-sizing: border-box;
+    }
+
+    .calculate-button {
+        padding: 8px 20px;
+    }
+
+    .pixel320 {
+        font-size: 20px;
+        position: relative;
+        top: 112px;
+        text-align: center;
+        font-family: Roboto;
+        color: grey;
+    } 
+
+    .input-field input {
+        padding: 11px 30px 10px 10px;
+        font-size: 14px;
+        font-family: Roboto;
+    }
+
+    .formula-card {
+        width: 96%;
+    }
+
+}
+
